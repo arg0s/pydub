@@ -273,10 +273,10 @@ class AudioSegment(object):
             "-f", format, output.name,  # output options (filename last)
         ])
         # read stdin / write stdout
-        subprocess.call(args,
+        #subprocess.call(args,
             # make ffmpeg shut up
-            stderr=open(os.devnull)
-        )
+        #    stderr=open(os.devnull)
+        #)
 
         output.seek(0)
         out_f.write(output.read())
