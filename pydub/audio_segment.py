@@ -274,9 +274,9 @@ class AudioSegment(object):
         ])
         print args
         # read stdin / write stdout
-        subprocess.call(args,
+        subprocess.call(args #,
             # make ffmpeg shut up
-            stderr=open(os.devnull)
+            #stderr=open(os.devnull)
         )
 
         output.seek(0)
